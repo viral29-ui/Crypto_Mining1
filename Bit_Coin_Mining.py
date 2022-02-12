@@ -1,3 +1,4 @@
+# Complete code for bitcoin mining
 from hashlib import sha256
 # print (sha256("ABC".encode("ascii")).hexdigest())
 def SHA256(text): #2 This utility function supply the input test
