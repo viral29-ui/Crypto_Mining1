@@ -1,6 +1,5 @@
 from hashlib import sha256
 
-
 def SHA256(text):
     return (sha256("ABC".encode("ascii")).hexdigest())
 
@@ -16,14 +15,7 @@ if __name__=='__main__':
 
     print(new_hash)
 
-# This is newaa
-
-
-
-
-
-
-
+# This is for coin mining  rrrrr
 
 
 
