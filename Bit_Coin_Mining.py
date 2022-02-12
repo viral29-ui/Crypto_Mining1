@@ -27,7 +27,7 @@ if __name__=='__main__': # main python entry point with given if condition
     new_hash = mine(6,transactions,'0000000xa126944e29568d0cff17edbe038f81208fecf9a66be9a2b8321c6ec7', difficulty)
     #4 fist is block number, then mining function giving transactions, previous hash, passing difficulty level
     total_time = str((time.time() - start)) # (current time - start time) that generate execution as result
-    print(f"End mining, Mining took:{total_time} seconds") # result of total execution times
+    print(f"End mining, Mining took:{total_time} seconds") # result of total execution times..
     print(new_hash)
 
 """
