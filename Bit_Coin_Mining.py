@@ -4,7 +4,7 @@ MAX_NONCE = 100000000000
 # print (sha256("ABC".encode("ascii")).hexdigest())
 def SHA256(text): #2 This utility function supply the input test
     return sha256(text.encode("ascii")).hexdigest() #1 .hexdigest() get the actual hash out of it
-# This is 64 bit for hexadecimel
+# This is 64 bit for hexadecimal
 def mine(block_number,transactions,previous_hash,prefix_zeros): #4 passing all parameters
     # Mine function will take transaction
     prefix_str = '0'*prefix_zeros
@@ -18,22 +18,16 @@ def mine(block_number,transactions,previous_hash,prefix_zeros): #4 passing all p
 
     raise BaseException(f"Couldn't find correct has after trying {MAX_NONCE} times")
 
-
 if __name__=='__main__':
-    transactions = '''  
-    Dhaval->Bhavin->20,
-    Mando->Cara->45
-    '''
+    transactions = ''' Robi-> Rony->20 & Riad-> Ripon->45 ''' # Transaction person to person
     difficulty = 4 #5 difficulty level in front of hash
     import time
     start = time.time()
     print("Start mining")
-    new_hash = mine(5,transactions,'0000000xa036944e29568d0cff17edbe038f81208fecf9a66be9a2b8321c6ec7', difficulty)
+    new_hash = mine(5,transactions,'0000000xa126944e29568d0cff17edbe038f81208fecf9a66be9a2b8321c6ec7', difficulty)
     #4 fist is block number, then mining function giving transactions, previous hash, passing difficulty level
     total_time = str((time.time() - start))
     print(f"End mining, Mining took:{total_time} seconds")
     print(new_hash)
-
-
 
 
