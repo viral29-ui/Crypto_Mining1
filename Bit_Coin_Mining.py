@@ -15,7 +15,7 @@ if __name__=='__main__':
 
     print(new_hash)
 
-# This is for coin mining  rrrrr
+# This is for mining task
 
 
 
