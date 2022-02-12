@@ -18,7 +18,7 @@ if __name__=='__main__':
     Mando->Cara-45
     '''
     difficulty = 4 #5 difficulty level in front of hash
-    new_hash = mine(5,transactions,b5d4045c3f466fa91fe2cc6abe79232a1a57cdf104f7a26e716e0a1e2789df78, difficulty)
+    new_hash = mine(5,transactions,'b5d4045c3f466fa91fe2cc6abe79232a1a57cdf104f7a26e716e0a1e2789df78', difficulty)
     #4 fist is block number, then mining function giving transactions, previous hash, passing difficulty level
     print(new_hash)
 
